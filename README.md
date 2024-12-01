@@ -218,12 +218,10 @@
   - tried using the route with a param: 
     - /nav:navlinkslabel, testing for props.match.params.navlinkslabel
       - this resulted in nav component making non-stop api-calls
-        - ugh =(
-
-  - other attempts reached max limit for setting state, plus these are async
-
+    other attempts reached max limit for setting state, plus these are async
+        
   - finally decided to load nav link photo once....
-  -   after the app loads components, at beginning of app
+    - after the app loads components, at beginning of app
 
 - styling bugs:  
   - getting the search form and nav links buttons to look more consistent
