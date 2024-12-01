@@ -213,18 +213,14 @@
 - major bug fix: continuous api-calls
 
   - at first, implemented nav component the same as the search component
-  - this worked great...but....
-  -   this meant that a separate route...
-  -   would not be shown for each nav link set of photos
+    - this meant a separate route, and would not be shown for each nav link set of photos
 
-  - once I started using the route with a param: /nav:navlinkslabel
-  -   relying on testing for props.match.params.navlinkslabel
-  -   resulted in nav component making non-stop api-calls
-  -     ugh =(
+  - tried using the route with a param: 
+    - /nav:navlinkslabel, testing for props.match.params.navlinkslabel
+      - this resulted in nav component making non-stop api-calls
+        - ugh =(
 
-  - other attempts resulted in reaching a max limit for setting state
-  -   also limited by the fact the api-calls are async
-  -   so have to wait for these to finish before a component tries to access the data
+  - other attempts reached max limit for setting state, plus these are async
 
   - finally decided to load nav link photo once....
   -   after the app loads components, at beginning of app
