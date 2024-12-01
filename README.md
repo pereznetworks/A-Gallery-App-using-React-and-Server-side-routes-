@@ -214,23 +214,20 @@
 
   - at first, implemented nav component the same as the search component
   - this worked great...but....
-  - but this meant that a separate route...
-  - would not be shown for each nav link set of photos
+  -   this meant that a separate route...
+  -   would not be shown for each nav link set of photos
 
-  - once I started using the route with a param
-  - /nav:navlinkslabel
-  - relying on testing for props.match.params.navlinkslabel
-  - resulted in nav component making non-stop api-calls
-  - ugh =(
+  - once I started using the route with a param: /nav:navlinkslabel
+  -   relying on testing for props.match.params.navlinkslabel
+  -   resulted in nav component making non-stop api-calls
+  -     ugh =(
 
   - other attempts resulted in reaching a max limit for setting state
-  - also limited by the fact the api-calls are async
-  - so have to wait for these to finish....
-  - before a component tries to access the data
+  -   also limited by the fact the api-calls are async
+  -   so have to wait for these to finish before a component tries to access the data
 
   - finally decided to load nav link photo once....
-  - after app loads components
-  - at beginning of app
+  -   after the app loads components, at beginning of app
 
 - styling bugs:  
   - getting the search form and nav links buttons to look more consistent
