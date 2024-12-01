@@ -197,7 +197,7 @@
 
 - [A sample set of data set can be found here ](./src/Flickr/sample.json)
 
-- Until I can find a solution to to STEP 6:caveat issue
+- Until I can find a solution to STEP 6:caveat issue
   - I will not be moving forward with this project
 
 ## Step 7:
